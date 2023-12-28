@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #display {
+      color: brown;
+      font-size: 40px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="row text-center">
+        <h1 id="display"></h1>
+      </div>
+    </div>
+
+    <script>
+      let num = 20;
+      let geuss = 0;
+      do {
+        geuss = parseInt(prompt("geuss the no", ""));
+        if (geuss == num) {
+            document.getElementById("display").innerHTML =
+        "Congrats You win the game....!";
+        break;
+        }
+      } while (geuss != 0);
+      
+    </script>
+  </body>
+</html>
